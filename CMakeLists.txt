@@ -44,6 +44,7 @@ set(SOURCES
         Board.cpp
         raylibCpp.cpp
         Settings.cpp
+        Tetrominoes.cpp
 )
 
 set(HEADERS
@@ -52,7 +53,7 @@ set(HEADERS
         Vec2.h
         raylibCpp.h
         Settings.h
-)
+        Tetrominoes.h)
 
 # Add custom command to preprocess .cpp files to .i files
 foreach (source_file ${SOURCES})
@@ -68,6 +69,7 @@ endforeach ()
 
 add_custom_target(preprocess ALL DEPENDS ${PREPROCESSED_FILES})
 
-add_executable(raylib-tetris ${SOURCES} ${HEADERS})
+add_executable(raylib-tetris ${SOURCES} ${HEADERS}
+)
 
 target_link_libraries(raylib-tetris PRIVATE raylib)
