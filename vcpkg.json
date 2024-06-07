@@ -1,0 +1,6 @@
+{
+  "dependencies" : [ "fmt", {
+    "name" : "raylib",
+    "version>=" : "5.0"
+  } ]
+}
