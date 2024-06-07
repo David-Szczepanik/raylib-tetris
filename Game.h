@@ -17,5 +17,6 @@ private:
   void Update();
 
   Board board;
-  Jay tetromino;
+  Square tetromino;
+  // Jay tetromino;
 };

@@ -19,9 +19,13 @@ public:
   void RotateClockwise();
   void RotateCounterClockwise();
   void Draw() const;
+  void MoveDown();
+  void MoveLeft();
+  void MoveRight();
+  Vec2<int> boardPos;
 
 private:
-  Vec2<int> boardPos;
+  // Vec2<int> boardPos;
   Rotation currentRotation;
   const bool* shape;
   const int dimension;

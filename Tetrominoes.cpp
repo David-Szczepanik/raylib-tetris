@@ -18,12 +18,18 @@ void Tetromino::RotateClockwise() {
 
 void Tetromino::RotateCounterClockwise() {
   currentRotation = Rotation((int(currentRotation) + 3) % 4);
-  // if (currentRotation == Rotation::UP) {
-  //   currentRotation = Rotation::LEFT;
-  // }
-  // else {
-  //   currentRotation = Rotation(int(currentRotation) - 1);
-  // }
+}
+
+void Tetromino::MoveDown() {
+  boardPos = boardPos + Vec2<int>(0, 1);
+}
+
+void Tetromino::MoveLeft() {
+  boardPos = boardPos + Vec2<int>(-1, 0);
+}
+
+void Tetromino::MoveRight() {
+  boardPos = boardPos + Vec2<int>(1, 0);
 }
 
 void Tetromino::Draw() const {

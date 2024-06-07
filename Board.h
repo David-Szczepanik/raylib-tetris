@@ -36,6 +36,4 @@ private:
   const int cellSize;
   const int padding;
   Vec2<int> screenPos;
-  // int screenX;
-  // int screenY;
 };

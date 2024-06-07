@@ -24,6 +24,8 @@ bool Board::Cell::Exists() const {
   return bExists;
 }
 
+
+
 Board::Board(Vec2<int> screenPos, Vec2<int> widthHeight, int cellsize, int padding) :
   width(widthHeight.GetX()),
   height(widthHeight.GetY()),
